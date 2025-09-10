@@ -3,3 +3,6 @@
 *.pptx
 참고문서/
 연습/
+*.zip
+
+.DS_Store
