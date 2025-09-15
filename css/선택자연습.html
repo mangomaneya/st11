@@ -10,7 +10,22 @@
       #section1 {
         background-color: #86c;
       }
-      section p{background-color: #ccc;}
+      section > p {
+        background-color: #ccc;
+      }
+      /* section > .box > p {
+        color: #f00;
+      } */
+      section h2 + p {
+        color: #f00;
+      }
+      /* 
+      ~ : 형요소(요소1) ~ 아우요소(요소2)
+      요소1의 아우인 모든 요소들 선택
+      + : 형요소(요소1) + 바로 아래동생(요소2) 
+      요소1에 가장 인접한 요소2 선택
+       */
+
     </style>
   </head>
   <body>
