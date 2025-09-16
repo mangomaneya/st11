@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>인라인레벨과 블럭레벨</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        margin: 0 auto;
+        background-color: #ccc;
+      }
+      .inner {
+        width: 80%;
+        margin: 0 auto;
+        /* background-color: #ef6; */
+        padding: 50px 0;
+      }
+      .box {
+        margin-bottom: 50px;
+        background-color: #f7b0f3;
+      }
+      .box:last-child {
+        margin-bottom: 0;
+      }
+      .box span {
+        color: #f00;
+        font-weight: bold;
+        font-size: larger;
+        background-color: #ef8;
+        padding: 1rem;
+        margin: 8px;
+        width: 120px;
+        display: inline-block;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="inner">
+        <div class="box box1">
+          Lorem <span>ipsum</span> dolor sit amet consectetur adipisicing elit.
+          Tenetur possimus, nesciunt veritatis exercitationem doloribus modi
+          sequi aliquam <span>unde</span> temporibus eveniet totam sit assumenda
+          sint obcaecati! Pariatur sint voluptatum placeat itaque!
+        </div>
+        <div class="box box2">
+          Ab voluptatem obcaecati dicta fugiat temporibus vitae, est illo
+          dolorum quisquam beatae eveniet praesentium, voluptatum corporis!
+          Natus voluptates fugit pariatur, aliquid quisquam est fugiat sed
+          dolorem nostrum? Tenetur, inventore sequi!
+        </div>
+        <div class="box box3">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
+          tenetur assumenda quod sequi neque, optio esse in omnis modi earum
+          repellendus nisi fugit, adipisci voluptatum rerum autem officia
+          quisquam deleniti!
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
