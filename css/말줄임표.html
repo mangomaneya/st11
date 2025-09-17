@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>말줄임표css</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .box {
+        margin: 50px;
+        padding: 1em;
+        background-color: #ccc;
+      }
+      /* 여러줄 말줄임표 */
+      .box1 {
+        /* white-space: normal; */
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        -webkit-line-clamp: 2;
+        width: 80%;
+        height: 50px;
+      }
+      /* 한 줄 말줄임표 */
+      .box2 {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      /* 
+      박스모델 
+      너비 : 부모의 콘텐츠영역
+      높이 : 자식(콘텐츠)의 높이
+      */
+      /* overflow */
+      .box3,
+      .box4,
+      .box5 {
+        width: 400px;
+        height: 40px;
+      }
+      .box3 {
+        overflow: visible;
+      }
+      .box4 {
+        overflow: hidden;
+      }
+      .box5 {
+        overflow: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box box1">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum explicabo
+      neque blanditiis, eum voluptatem itaque excepturi, eveniet id, aspernatur
+      qui ullam labore vero provident repudiandae! Sequi enim explicabo libero
+      magni. Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, in
+      quas molestias consequatur labore blanditiis iure ullam nihil, esse
+      dolores impedit asperiores atque. Non deserunt ad nobis dolor culpa nihil?
+    </div>
+    <div class="box box2">
+      Assumenda nihil, qui laborum veritatis incidunt minus nisi culpa magni
+      accusamus adipisci! Nobis, natus repellendus sequi quidem voluptatem
+      consectetur quasi nulla tempora. Porro iusto molestias corrupti tempora
+      nihil illum temporibus.
+    </div>
+    <hr />
+    <div class="box box3">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, vero.
+      Atque ex ut officia asperiores voluptates cupiditate, sed obcaecati, nisi
+      autem quas nam similique illo. Id veritatis deleniti ipsam culpa!Lorem
+      ipsum dolor sit amet consectetur adipisicing elit.
+    </div>
+    <div class="box box4">
+      Deserunt culpa rerum debitis eligendi aliquam, dolor blanditiis veritatis
+      totam autem animi praesentium dolore, ad consequatur quod sapiente
+      laudantium alias quo? Dignissimos corrupti itaque repellendus delectus
+      ipsa, tenetur velit. Tempora.
+    </div>
+    <div class="box box5">
+      Deserunt culpa rerum debitis eligendi aliquam, dolor blanditiis veritatis
+      totam autem animi praesentium dolore, ad consequatur quod sapiente
+      laudantium alias quo? Dignissimos corrupti itaque repellendus delectus
+      ipsa, tenetur velit. Tempora.
+    </div>
+  </body>
+</html>
