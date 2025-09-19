@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>float 연습 3</title>
+    <style>
+      /* reset */
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      /* common */
+      ol,
+      ul {
+        list-style: none;
+      }
+      a:link,
+      a:visited,
+      a:active {
+        color: #333;
+        text-decoration: none;
+      }
+      a:hover {
+        /* color: #f00; */
+      }
+      /* layout */
+      /* banner */
+      .banner-wrap {
+      }
+      .section-title {
+        /* background-color: #ccc; */
+        box-sizing: border-box;
+        /* border-top: 10px solid #ef6; */
+        font-size: 2rem;
+        width: 80%;
+        min-width: 1000px;
+        max-width: 1440px;
+        margin: 50px auto 20px;
+        /* padding-left: 1rem; */
+      }
+      .section-title::after{
+        content: "";
+        display: block;
+        width: 2rem; height: 2px; background-color: #333;
+        margin-bottom: 10px;
+      }
+      ul.banner-list {
+        overflow: hidden; /* flaot된 자식을 인식 */
+        width: 80%;
+        min-width: 1000px;
+        max-width: 1440px;
+
+        margin: 0 auto;
+      }
+      ul.banner-list::after {
+        /* float요소 이후에 작성된 태그에게 float영향 제거 */
+        content: "가나다라";
+        display: block;
+        clear: both;
+      }
+      li.banner-item {
+        background-color: #ccc;
+        width: calc(33.333% - 20px);
+        float: left;
+        margin: 0 10px;
+      }
+      .banner-item:first-child {
+        margin-left: 0;
+      }
+      .banner-item:last-child {
+        margin-right: 0;
+      }
+      .banner-item > a {
+        background-color: #afe;
+        display: block;
+      }
+      .banner-item .thumbnail {
+        background-color: #ef6;
+
+        min-height: 200px;
+      }
+      .banner-item .desc {
+      }
+      .banner-item .desc .title {
+        font-size: 2em;
+        padding-top: 1em;
+      }
+      .banner-item .desc .goto {
+        font-size: 1em; /* 부모의 폰트사이즈를 기준*/
+        padding-top: 0.5em; /* 폰트사이즈를 제외하고 본인요소에 적용된 폰트사이즈를 기준으로 크기 결정됨 */
+      }
+      .banner-item .desc .goto:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="banner-wrap">
+      <div class="section-title">BEST</div>
+      <ul class="banner-list">
+        <li class="banner-item">
+          <a href="#">
+            <div class="thumbnail">사진</div>
+            <div class="desc">
+              <p class="title">배너 제목</p>
+              <p class="goto">자세히 보기</p>
+            </div>
+          </a>
+        </li>
+        <li class="banner-item">
+          <a href="https://www.naver.com">
+            <div class="thumbnail">사진</div>
+            <div class="desc">
+              <p class="title">배너 제목</p>
+              <p class="goto">자세히 보기</p>
+            </div>
+          </a>
+        </li>
+        <li class="banner-item">
+          <a href="https://www.naver.com">
+            <div class="thumbnail">사진</div>
+            <div class="desc">
+              <p class="title">배너 제목</p>
+              <p class="goto">자세히 보기</p>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
