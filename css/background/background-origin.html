@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>background-origin</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        margin: 50px;
+      }
+      .box {
+        border: 10px dotted #000;
+        background-color: #ccc;
+        background-image: url(./images/frame.png);
+        background-repeat: no-repeat;
+
+        width: 400px;
+        min-height: 200px;
+
+        margin-bottom: 20px;
+        padding: 30px;
+      }
+      .box1 {
+        background-origin: padding-box;
+      }
+      .box2 {
+        background-origin: content-box;
+      }
+      .box3 {
+        background-image: url(images/bg.jpg);
+        background-clip: padding-box;
+        background-size: cover;
+
+        padding: 50px;
+      }
+      .box4 {
+        background-image: url(images/bg.jpg);
+        background-clip: content-box;
+        background-size: cover;
+
+        padding: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box box1">가나다</div>
+    <div class="box box2">가나다</div>
+    <div class="box box3">가나다</div>
+    <div class="box box4"></div>
+  </body>
+</html>
