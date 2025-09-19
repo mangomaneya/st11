@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>z-index</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        background-color: #ccc;
+        margin: 100px;
+        position: relative;
+      }
+      .box {
+        width: 200px;
+        height: 200px;
+      }
+      .box1 {
+        background-color: #ef6;
+        position: static;
+        left: 50px;
+        top: 50px;
+      }
+      .box2 {
+        /* 기준 자기자신 */
+        background-color: #6ef;
+        position: relative;
+        left: 50px;
+        top: 50px;
+      }
+      .box3 {
+        /* 기준: 가까운 조상중 static제외된 요소 = position:relative */
+        background-color: #e6f;
+        position: absolute;
+        left: 50px;
+        top: 50px;
+        z-index: 3;
+      }
+      .box4 {
+        background-color: #0f3;
+        position: fixed;
+        left: 200px;
+        top: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box box1">box1</div>
+      <div class="box box2">box2</div>
+      <div class="box box3">box3</div>
+      <div class="box box4">box4</div>
+    </div>
+  </body>
+</html>
