@@ -35,6 +35,7 @@
       }
       .prdList__item {
         box-sizing: inherit;
+        position: relative;
       }
       /* 상품 썸네일 */
       .prdList__item .thumbnail {
@@ -43,30 +44,64 @@
       .prdList__item .thumbnail > a {
         display: block; /* 너비높이를 지정하려고 or 부모의 너비를 가져오고 자식의 높이를 인식하려고 사용 */
       }
-      .prdList__item .thumbnail > a img{
+      .prdList__item .thumbnail > a img {
         display: block;
         min-height: 530px;
         background-color: #cc3;
       }
       .prdList__item .thumbnail .likeButton {
         background-color: rgba(200, 0, 0, 0.5);
-        width: 80px;height: 80px;
+        width: 80px;
+        height: 80px;
         position: absolute;
-        left: 10px;top: 10px;
+        left: 10px;
+        top: 10px;
       }
       .prdList__item .thumbnail .icon__box {
+        position: absolute;
+        /* left: 50%; */
+        top: 35%;
+        /* transform: translateX(-50%); */
+        width: 100%;
+        text-align: center;
+        /* display: none; */
+        opacity: 0;
+        transition: all 0.2s ease-in-out;
+      }
+      .prdList__item:hover .thumbnail .icon__box {
+        /* display: block; */
+        opacity: 1;
       }
       .prdList__item .thumbnail .icon__box span {
+        display: inline-block;
+        border: 1px solid #000;
+        margin-right: 20px;
+        padding: 0.5em 1em;
+        border-radius: 4px;
+      }
+      .prdList__item .thumbnail .icon__box span:last-child {
+        margin-right: 0;
       }
       .prdList__item .thumbnail .sale_box {
+        background-color: rgba(0, 0, 225, 0.5);
+        width: 80px;
+        height: 80px;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        border-radius: 50%;
+        text-align: center;
       }
       /* 상품 설명 */
       .prdList__item .description {
-        background-color: #eee;
+        background-color: rgba(255, 255, 200, 0.5);
         box-sizing: inherit;
 
         min-height: 150px;
         border: 1px solid #00f;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
       }
     </style>
   </head>
@@ -74,7 +109,9 @@
     <li class="xans-record-">
       <div class="prdList__item">
         <div class="thumbnail">
-          <a href="#"> <img src="" alt="샘플위치" width="400" height="530"> </a>
+          <a href="#">
+            <img src="" alt="샘플위치" width="400" height="530" />
+          </a>
           <div class="likeButton">좋아요 버튼</div>
           <div class="icon__box">
             <span>wish</span><span>cart</span><span>option</span>
