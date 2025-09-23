@@ -12,6 +12,10 @@
       body {
         margin: 50px;
       }
+      hr {
+        margin: 20px 0;
+        border: 4px solid #ddd;
+      }
 
       .basic-table {
         border-collapse: collapse;
@@ -54,7 +58,28 @@
       /* 첫번째 칼럼 */
       .basic-table tr th:first-child,
       .basic-table tr td:first-child {
-background-color: #9ef;
+        background-color: #9ef;
+      }
+
+      /* basic-table2 */
+      .basic-table2 {
+        border-collapse: collapse;
+        width: 100%;
+        border-bottom: 1px solid dodgerblue;
+      }
+      .basic-table2 th,
+      .basic-table2 td {
+        border-bottom: 1px solid #ccc;
+        padding: 0.5em;
+        box-sizing: border-box;width: 25%;
+      }
+      .basic-table2 tr:first-child th {
+        background-color: dodgerblue;
+        color: white;
+      }
+      .basic-table2 tr:last-child th,
+      .basic-table2 tr:last-child td {
+        border-bottom: none;
       }
     </style>
   </head>
@@ -86,5 +111,67 @@ background-color: #9ef;
         <td>내용4</td>
       </tr>
     </table>
+    <hr />
+    table>tr>th*4{제목$}^tr*3>td*4{내용$}
+    <table class="basic-table2">
+      <tr>
+        <th>제목1</th>
+        <th>제목2</th>
+        <th>제목3</th>
+        <th>제목4</th>
+      </tr>
+      <tr>
+        <td>내용1</td>
+        <td>내용2</td>
+        <td>내용3</td>
+        <td>내용4</td>
+      </tr>
+      <tr>
+        <td>내용2</td>
+        <td>Lorem ipsum dolor sit. Lorem ipsum dolor sit amet.</td>
+        <td>내용3</td>
+        <td>내용4</td>
+      </tr>
+      <tr>
+        <td>내용1</td>
+        <td>내용2</td>
+        <td>내용3</td>
+        <td>내용4</td>
+      </tr>
+    </table>
+
+    <hr>
+
+    table>tr*3>td*2{내용$}
+    <table class="basic-table3">
+      <tr>
+        <td>내용1</td>
+        <td>내용2</td>
+      </tr>
+      <tr>
+        <td>내용1</td>
+        <td>내용2</td>
+      </tr>
+      <tr>
+        <td>내용1</td>
+        <td>내용2</td>
+      </tr>
+    </table>
   </body>
+  <style>
+          /* basic-table2 */
+      .basic-table3 {
+        border-collapse: collapse;
+        width: 100%;
+        table-layout: fixed;
+        border-top: 4px solid #333;
+      }
+      .basic-table3 th, .basic-table3 td{
+        box-sizing: border-box; padding: 0.5em;border-bottom: 1px solid #555;
+      }
+      .basic-table3 th:nth-child(1), .basic-table3 td:nth-child(1){
+        border-right: 1px solid #555;
+        width: 200px;
+      }
+  </style>
 </html>
