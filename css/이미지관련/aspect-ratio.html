@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>aspect-ratio</title>
+  <style>
+    *{margin: 0;padding: 0;}
+    .container{background-color: #ddd;margin: 50px;font-size: 0;}
+    .box{background-color: dodgerblue;display: inline-block;width: 100px;border: 1px solid darkblue;margin-right: 10px;font-size: 16px;}
+
+    /* aspect-ratid : 가로비율 / 세로비율 */
+    .box1{aspect-ratio: 1/1;}
+    .box2{aspect-ratio: 0.5/1;}
+    .box3{aspect-ratio: 4/3;}
+    .box4{aspect-ratio: 16/9;}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="box box1">box1</div>
+    <div class="box box2">box2</div>
+    <div class="box box3">box3</div>
+    <div class="box box4">box4</div>
+  </div>
+</body>
+</html>
