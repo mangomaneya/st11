@@ -10,11 +10,17 @@
         padding: 0;
       }
 
-      .container{
+      .container {
         position: relative;
-        width: 100%;height: 100vh;
+        width: 100%;
+        height: 100vh;
         background: #2589b0;
-        background: linear-gradient(124deg, rgba(37, 137, 176, 1) 0%, rgba(167, 87, 199, 1) 50%, rgba(237, 201, 83, 1) 100%);
+        background: linear-gradient(
+          124deg,
+          rgba(37, 137, 176, 1) 0%,
+          rgba(167, 87, 199, 1) 50%,
+          rgba(237, 201, 83, 1) 100%
+        );
       }
 
       .media-txt {
@@ -23,26 +29,111 @@
         box-sizing: border-box;
         position: fixed;
         top: 10px;
-        right: 10px;
+        left: 10px;
         padding: 0.5em 1em;
+        z-index: 999;
       }
       .media-txt::before {
-        content: "pc";
+        content: "wide desk";
       }
+      @media (max-width: 1199.98px) {
+        /* 1200px~768px사이 */
+        .media-txt::before {
+          content: "desktop";
+        }
+      }
+      @media (max-width: 767.98px) {
+        /* 768px~577px 사이 */
+        .media-txt::before {
+          content: "tablet";
+        }
+      }
+      /* 577px 이하 */
+      /* @media (max-width: 576.98px) {
+        .media-txt::before {
+          content: "mobile";
+        }
+      } */
+      @media (max-width: 576.98px) and (orientation: portrait) {
+        /* 577px 이하 */
+        .media-txt::before {
+          content: "mobile portrait";
+        }
+      }
+
       .media-box {
         background-color: rgba(255, 255, 255, 0.3);
-        box-sizing: border-box;position: absolute; left: 50%;top: 50%; transform: translate(-50%, -50%);
-        width: 50%; max-width: 700px; min-width: 360px; 
+        box-sizing: border-box;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 50%;
+        max-width: 700px;
+        min-width: 360px;
         padding: 30px;
         border-radius: 1.5em;
+        box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.3);
       }
-      .media-box .media-wrap{
+      .media-box .media-wrap {
         aspect-ratio: 4/3;
         border-radius: 1.2em;
         overflow: hidden;
       }
-      .media-box .media-wrap img{width: 100%;height: 100%;object-fit: cover;}
+      .media-box .media-wrap img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
 
+      @media (max-width: 1199.98px) {
+        /* 1200px이하 미디어 적용 */
+        .container {
+          background: #ffdb80;
+          background: radial-gradient(
+            circle,
+            rgba(255, 219, 128, 1) 0%,
+            rgba(80, 212, 194, 1) 100%
+          );
+        }
+      }
+
+      @media (max-width: 767.98px) {
+        /* 768이하 미디어 적용 */
+        .container {
+          background: #020024;
+          background: linear-gradient(
+            178deg,
+            rgba(2, 0, 36, 1) 0%,
+            rgba(9, 9, 121, 1) 35%,
+            rgba(0, 212, 255, 1) 100%
+          );
+        }
+        .media-box {
+          padding: 20px;
+          border-radius: 1em;
+        }
+        .media-box .media-wrap {
+          border-radius: 0.5em;
+        }
+      }
+      @media (max-width: 576.98px) and (orientation: portrait) {
+        .container {
+          background: #f0c9aa;
+          background: radial-gradient(
+            circle,
+            rgba(240, 201, 170, 1) 0%,
+            rgba(252, 70, 107, 1) 100%
+          );
+        }
+        .media-box {
+          width: 80%;
+          min-width: 1px;
+        }
+        .media-box .media-wrap {
+          aspect-ratio: 3/4;
+        }
+      }
     </style>
   </head>
   <body>
