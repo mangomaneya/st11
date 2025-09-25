@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>media query - pc</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        background-color: #ccc;
+        margin: 2.5em;
+      }
+      h1 {
+        font-size: 1.5rem;
+        margin-bottom: 30px;
+        padding: 0.5em;
+      }
+
+      /* media의 너비가 768이상일때 적용 */
+      /* @media (min-width:768px) and (max-width:1023px){} */
+      @media (min-width: 768px) {
+        .container {
+          background-color: #ef6;
+        }
+      }
+
+      /* media의 너비가 1024이상일때 적용 */
+      @media (min-width: 1024px) {
+        .container {
+          background-color: #6ff;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>모바일우선</h1>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos
+        ullam magnam delectus, dolores sint, a consequuntur quaerat aliquid
+        beatae ratione fuga nihil porro dolorum ipsa iure quisquam! Commodi,
+        corrupti minus!
+      </p>
+      <p>
+        모바일 우선은 @media 조건없이 작성하는 화면이 모바일 화면 스타일을
+        작성한다는 의미
+      </p>
+    </div>
+  </body>
+</html>
