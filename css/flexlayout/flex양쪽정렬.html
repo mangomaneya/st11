@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>flex 정렬모음</title>
+  <style>
+    *{margin: 0;padding: 0;box-sizing: border-box;}
+    body{margin: 50px;}
+    .container{background-color: #ccc; padding: 30px;}
+    .section { margin-bottom: 50px;}
+    .section:last-child {margin-bottom: 0;}
+    h2 { margin-bottom: 10px;}
+    .itemWrap{ 
+    /* flex */
+    display: flex; gap: 10px;
+    }
+    .itemWrap1{justify-content: space-between; align-items: flex-end;}
+    .itemWrap2{justify-content: space-between; align-items: center;}
+    .itemWrap3{justify-content: space-between; align-items: center;}
+    .itemWrap4{justify-content: start; align-items: center;}
+
+    .item1{background-color: #6cf;width: 100px;min-height: 50px;}
+    .item2{background-color: #c6f; width: 200px;min-height: 30px;}
+    .item3{background-color: #3e0; width: 150px;min-height: 70px;}
+
+    .itemWrap3 .item2{ flex-grow: 1; max-width: 600px;}
+    .itemWrap4 .item3{margin-left: auto;} /*콘테이너 왼쪽의 남는 영역을 알아서 써라 = 오른쪽에 붙어라*/
+  </style>
+</head> 
+<body>
+  <div class="container">
+    <div class="section">
+      <h2>1. 두개 양끝정렬</h2>
+      <div class="itemWrap itemWrap1">
+        <div class="item item1">item1</div>
+        <div class="item item2">item2</div>
+      </div>
+    </div>
+    
+    <div class="section">
+      <h2>2. 3개 균등 정렬</h2>
+      <div class="itemWrap itemWrap2">
+        <div class="item item1">item1</div>
+        <div class="item item2">item2</div>
+        <div class="item item3">item3</div>
+      </div>
+    </div>
+    
+    <div class="section">
+      <h2>3. 정렬-가운데 늘어남</h2>
+      <div class="itemWrap itemWrap3">
+        <div class="item item1">item1</div>
+        <div class="item item2">item2</div>
+        <div class="item item3">item3</div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>4. 마지막만 오른쪽으로 </h2>
+      <div class="itemWrap itemWrap4">
+        <div class="item item1">item1</div>
+        <div class="item item2">item2</div>
+        <div class="item item3">item3</div>
+      </div>
+    </div>
+
+    <style>
+      .itemWrap5{flex-direction: column; align-items: center; position: relative;}
+      .itemWrap5 .item3{position: absolute;bottom: 0;right: 0;}
+    </style>
+    <div class="section">
+      <h2>5. flex와 position </h2>
+      <div class="itemWrap itemWrap5">
+        <div class="item item1">item1</div>
+        <div class="item item2">item2</div>
+        <div class="item item3">item3</div>
+      </div>
+    </div>
+    
+  </div>
+</body>
+</html>
