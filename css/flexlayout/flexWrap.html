@@ -80,7 +80,10 @@ align-content - item이 wrap된 상태에서의 정렬 */
   <style>
 .flex-container3{display: flex;flex-direction: row;justify-content: flex-start; flex-wrap: wrap; align-items: center;gap: 10px;}
 
-.flex-container3 .item {flex-basis: 25%;box-sizing: border-box;flex-grow: 1; flex-shrink: 1;}
+.flex-container3 .item {box-sizing: border-box;
+ /* flex: 0 0 calc(25% - 10px); grow:0, shrink:0, basis:25% */
+  flex-grow: 0; flex-shrink: 0;flex-basis: calc(25% - 7.5px);
+}
     </style>
     <div class="section">
       <div class="section-title">3. flex-wrap : wrap / 4단 레이아웃 </div>
