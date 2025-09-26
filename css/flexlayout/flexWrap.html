@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>flex-wrap</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .section {
+        padding: 30px;
+      }
+      .section-title {
+        background-color: #ccc;
+        font-size: 1.5em;
+        font-weight: 700;
+      }
+      .section-content {
+        padding-top: 15px;
+      }
+      .section-content > div {
+        background-color: #f6e;
+        display: flex;
+      }
+      .section-content .item {
+        background-color: dodgerblue;
+        border: 1px solid darkblue;
+      }
+    </style>
+  </head>
+
+  <body>
+    <style>
+      .flex-container1{display: flex;flex-direction: row;justify-content: flex-start; width: 600px;padding: 20px 0;}
+       .flex-container1 .item { flex: none;width: 150px;}
+    </style>
+    <div class="section">
+      <div class="section-title">1. flex-wrap : nowrap - 자식이 부모를 넘어가도 줄바꿈 없음</div>
+      <div class="section-content">
+        <div class="flex-container1">
+          <div class="item">item1</div>
+          <div class="item">item2</div>
+          <div class="item">item3</div>
+          <div class="item">item4</div>
+          <div class="item">item5</div>
+          <div class="item">item6</div>
+          <div class="item">item7</div>
+          <div class="item">item8</div>
+        </div>
+      </div>
+    </div>
+
+    <style>
+.flex-container2{display: flex;flex-direction: row;justify-content: flex-start; width: 600px;padding: 20px 0;flex-wrap: wrap;min-height: 400px;align-items: center;align-content: center;}
+/* align-items - item이 wrap되지 않은 상태 
+align-content - item이 wrap된 상태에서의 정렬 */
+.flex-container2 .item { flex: none;width: 150px;}
+    </style>
+
+    <div class="section">
+      <div class="section-title">2. flex-wrap : wrap - 자식이 부모를 넘어가면 줄바꿈</div>
+      <div class="section-content">
+        <div class="flex-container2">
+          <div class="item">item1</div>
+          <div class="item">item2</div>
+          <div class="item">item3</div>
+          <div class="item">item4</div>
+          <div class="item">item5</div>
+          <div class="item">item6</div>
+          <div class="item">item7</div>
+          <div class="item">item8</div>
+        </div>
+      </div>
+    </div>
+
+
+  <style>
+.flex-container3{display: flex;flex-direction: row;justify-content: flex-start; flex-wrap: wrap; align-items: center;gap: 10px;}
+
+.flex-container3 .item {flex-basis: 25%;box-sizing: border-box;flex-grow: 1; flex-shrink: 1;}
+    </style>
+    <div class="section">
+      <div class="section-title">3. flex-wrap : wrap / 4단 레이아웃 </div>
+      <div class="section-content">
+        <div class="flex-container3">
+          <div class="item">item1</div>
+          <div class="item">item2</div>
+          <div class="item">item3</div>
+          <div class="item">item4</div>
+          <div class="item">item5</div>
+          <div class="item">item6</div>
+          <div class="item">item7</div>
+          <div class="item">item8</div>
+        </div>
+      </div>
+    </div>
+
+    
+  </body>
+</html>
