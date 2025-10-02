@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>6. 그리드 자동반복 auto-fit auto-fill</title>
+  <style>
+    *{margin: 0;padding: 0;}
+    body{margin: 50px;} .grid-container *{box-sizing: border-box;}
+
+    .grid-container {background-color: pink;min-height: 600px;}
+    .grid-container .item {background-color: dodgerblue;border: 1px solid darkblue;aspect-ratio: 1;}
+
+    /* grid */
+    /* 
+    auto-fill : 빈공간에 자리배치
+    auto-fit : 빈공간은 빈처리
+     */
+    .grid-container {
+      display: grid; 
+      /* grid-template-rows: repeat(3, auto);  */
+      grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+      justify-content: start; align-content: center ;
+      gap: 10px; 
+    }
+  
+
+  </style>
+</head>
+<body>
+  <div class="grid-container">
+    <div class="item">item1</div>
+    <div class="item">item2</div>
+    <div class="item">item3</div>
+    <div class="item">item4</div>
+    <div class="item">item5</div>
+    <div class="item">item6</div>
+    <div class="item">item7</div>
+    <div class="item">item8</div>
+    <div class="item">item9</div>
+  </div>
+</body>
+</html>

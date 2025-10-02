@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>7 grid template area</title>
+  <style>
+    *{margin: 0;padding: 0;}
+
+    .grid-container{background-color: pink;}
+    .header, .lnb, .main-content, .footer {background-color: dodgerblue;}
+
+
+    .grid-container{
+      display: grid; 
+      grid-template-rows: 100px minmax(400px, auto) 200px;
+      grid-template-columns: 250px 1fr;
+      gap: 10px;
+      /* 그리드 영역이름 설정 */
+      grid-template-areas: 
+      "header header"
+      "side main"
+      "footer footer"
+      ;
+    }
+    /* 그리드 영역에 아이템 배치 */
+    .header{grid-area: header;}
+    .lnb{grid-area: side;}
+    .main-content{grid-area: main;}
+    .footer{grid-area: footer;}
+  </style>
+</head>
+<body>
+  <div class="grid-container">
+    <header class="header">header</header>
+    <aside class="lnb">lnb</aside>
+    <main class="main-content">main</main>
+    <footer class="footer">footer</footer>
+  </div>
+</body>
+</html>
