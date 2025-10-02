@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2. 그리드 행열 지정</title>
+  <style>
+    *{margin: 0;padding: 0;}
+    body{margin: 50px;} .grid-container *{box-sizing: border-box;}
+
+    .grid-container {background-color: pink;min-height: 600px;}
+    .grid-container .item {background-color: dodgerblue;border: 1px solid darkblue;}
+
+    /* grod */
+    /* 
+    1. grid 선언
+    2. 행열 수와 크기 지정 
+    3. 정렬지정 
+    4. 여백지정
+     */
+    .grid-container {
+      display: grid; /* 1.grid 선언 */
+      grid-template-rows: 100px 300px 100px; grid-template-columns: 100px 200px 400px; /* 2. 행과 열의 수와 크기 지정  */
+      justify-content: space-evenly; align-content: center ;/* 3. 정렬지정  */
+      gap: 10px; /* 4. 여백지정 (정렬에 space-요소가 있으면 gap은 무시됨 )*/
+    }
+  </style>
+</head>
+<body>
+  <div class="grid-container">
+    <div class="item">item1</div>
+    <div class="item">item2</div>
+    <div class="item">item3</div>
+    <div class="item">item4</div>
+    <div class="item">item5</div>
+    <div class="item">item6</div>
+    <div class="item">item7</div>
+    <div class="item">item8</div>
+    <div class="item">item9</div>
+  </div>
+</body>
+</html>
