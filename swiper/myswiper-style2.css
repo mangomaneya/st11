@@ -12,13 +12,13 @@
   --myName-bullet-height: 8px;
   --myName-bullet-opacity: 0.8;
 
-  --myName-padding-bottom: 40px;
+  --myName-padding-bottom: 30px;
   --myName-scrollbar-bottom: var(--myName-padding-bottom);
 
   --myName-scrollbar-top: auto;
   --myName-scrollbar-height: 4px;
-  --myName-scrollbar-left:4px;
-  --myName-scrollbar-width:100%;
+  --myName-scrollbar-left: 4px;
+  --myName-scrollbar-width: 100%;
 }
 
 .myName .swiper-button-next,
@@ -61,6 +61,16 @@
   opacity: var(--swiper-pagination-bullet-opacity, 1);
 }
 
+.myName .swiper-pagination-progressbar.swiper-pagination-horizontal,
+.myName.swiper-horizontal > .swiper-pagination-progressbar {
+  height: var(--swiper-pagination-progressbar-size, 4px);
+  left: 0;
+  top: auto;
+  bottom : 0;
+  width: 100%;
+  background-color: var(--myName-bullet-color);
+}
+
 /* scroll bar */
 
 .myName .swiper-scrollbar.swiper-scrollbar-horizontal,
@@ -75,7 +85,6 @@
 
   background: rgba(0, 0, 0, 0.5);
   border-radius: 0;
-
 }
 
 .swiper-scrollbar-drag {
