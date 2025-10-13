@@ -1,0 +1,40 @@
+:root {
+ --primary-color:#f3c0aa;
+}
+
+.myName {
+  --myName-bullet-color:var(--primary-color);
+  --myName-bullet-border-radius:99999px;
+  --myName-bullet-width:8px;
+  --myName-bullet-height:4px
+}
+
+.myName .swiper-button-next,
+.swiper-button-prev path {
+  svg {
+    fill: #fff;
+  }
+}
+
+.myName .swiper-button-next svg path,
+.myName .swiper-button-prev svg path{
+  fill: #ffffff77;
+}
+.myName .swiper-button-next:hover svg path,
+.myName .swiper-button-prev:hover svg path{
+  fill: #fff;
+  transition: all 0.2s ease;
+}
+
+.myName { 
+  padding-bottom: 40px; /* pagination을 이미지 바깥으로 */
+}
+
+.myName .swiper-pagination-bullet {
+    background: var(--swiper-pagination-bullet-inactive-color, #000);
+    border-radius: var(--swiper-pagination-bullet-border-radius, 50%);
+    display: inline-block;
+    height: var(--swiper-pagination-bullet-height, var(--swiper-pagination-bullet-size, 8px));
+    opacity: var(--swiper-pagination-bullet-inactive-opacity, .2);
+    width: var(--swiper-pagination-bullet-width, var(--swiper-pagination-bullet-size, 8px));
+}
