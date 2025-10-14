@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>swiper 3 wconcept</title>
+    <!-- 플러그인 css -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+    <!-- 플러그인 js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        margin-top: 50px;
+      }
+      .visual-section {
+        overflow: hidden;
+      }
+      .swiper.mySlider {
+        /* background-color: #ddd; */
+        width: 80%;
+        /* height: calc(100vh - 100px); */
+        overflow: visible;
+      }
+      /* .swiper-wrapper {
+        gap: 40px;
+      } */
+      .swiper-slide {
+        opacity: 0.5;
+        filter: grayscale(70%);
+      }
+      .swiper-slide.swiper-slide-active {
+        opacity: 1;
+        filter: grayscale(0);
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: calc(100vh - 170px);
+        object-fit: cover;
+        object-position: center;
+        /* margin: 0 auto; */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="visual-section">
+      <!-- Slider main container -->
+      <div class="swiper mySlider">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <img src="https://picsum.photos/1000/2000?random=1" />
+          </div>
+          <div class="swiper-slide">
+            <img src="https://picsum.photos/1000/2000?random=2" />
+          </div>
+          <div class="swiper-slide">
+            <img src="https://picsum.photos/1000/2000?random=3" />
+          </div>
+          <div class="swiper-slide">
+            <img src="https://picsum.photos/1000/2000?random=4" />
+          </div>
+          <div class="swiper-slide">
+            <img src="https://picsum.photos/1000/1000?random=5" />
+          </div>
+          <div class="swiper-slide">
+            <img src="https://picsum.photos/1000/1000?random=6" />
+          </div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+      </div>
+    </div>
+    <script>
+      const mySwiper = new Swiper(".mySlider", {
+        // Optional parameters
+        direction: "horizontal",
+        slidesPerView: 'auto', //"auto"를 쓰면 css크기를 따르거나 화면에 하나만 보임
+        spaceBetween: 40,
+        centeredSlides: true,
+        // autoplay: {
+        //   delay: 2500,
+        //   disableOnInteraction: false,
+        // },
+        loop: true,
+
+        // If we need pagination
+        pagination: {
+          el: ".swiper-pagination",
+          // type: "progressbar",
+        },
+
+        // Navigation arrows
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+
+        // And if we need scrollbar
+        scrollbar: {
+          el: ".swiper-scrollbar",
+        },
+      });
+    </script>
+  </body>
+</html>
