@@ -1,0 +1,83 @@
+:root {
+  --primary-color: #e29879;
+  --secondary-color: #eeaa22;
+  --active-color: #00aa11;
+}
+
+.myName {
+  --myName-bullet-color: var(--primary-color);
+  --myName-bullet-active-color: var(--active-color);
+  --myName-bullet-border-radius: 99999px;
+  --myName-bullet-width: 8px;
+  --myName-bullet-height: 8px;
+  --myName-bullet-opacity: 0.8;
+
+  --myName-padding-bottom: 40px;
+  --myName-scrollbar-bottom: var(--myName-padding-bottom);
+
+  --myName-scrollbar-top: auto;
+  --myName-scrollbar-height: 4px;
+  --myName-scrollbar-left:4px;
+  --myName-scrollbar-width:100%;
+}
+
+.myName .swiper-button-next,
+.swiper-button-prev path {
+  svg {
+    fill: #fff;
+  }
+}
+
+.myName .swiper-button-next svg path,
+.myName .swiper-button-prev svg path {
+  fill: #ffffff77;
+}
+.myName .swiper-button-next:hover svg path,
+.myName .swiper-button-prev:hover svg path {
+  fill: #fff;
+  transition: all 0.2s ease;
+}
+
+.myName {
+  /* pagination을 이미지 바깥으로 */
+  /* padding-bottom: 40px;  */
+  padding-bottom: var(--myName-padding-bottom);
+}
+
+.myName .swiper-pagination-bullet {
+  background: var(--myName-bullet-color, #000);
+  border-radius: var(--myName-bullet-border-radius, 50%);
+  display: inline-block;
+  height: var(
+    --myName-bullet-height,
+    var(--swiper-pagination-bullet-size, 8px)
+  );
+  opacity: var(--myName-bullet-opacity, 0.2);
+  width: var(--myName-bullet-width, var(--swiper-pagination-bullet-size, 8px));
+}
+
+.myName .swiper-pagination-bullet-active {
+  background: var(--myName-bullet-active-color);
+  opacity: var(--swiper-pagination-bullet-opacity, 1);
+}
+
+/* scroll bar */
+
+.myName .swiper-scrollbar.swiper-scrollbar-horizontal,
+.swiper-horizontal > .swiper-scrollbar {
+  bottom: var(--myName-scrollbar-bottom);
+  height: var(--myName-scrollbar-height, 4px);
+  left: var(--myName-scrollbar-left, 1%);
+  position: absolute;
+  top: var(--myName-scrollbar-top, auto);
+  width: var(--myName-scrollbar-width);
+  z-index: 50;
+
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 0;
+
+}
+
+.swiper-scrollbar-drag {
+  background: rgba(255, 255, 255, 1);
+}
