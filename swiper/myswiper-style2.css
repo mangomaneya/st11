@@ -48,13 +48,13 @@
   width: var(--myName-nav-button-width);
   height: var(--myName-nav-button-width);
 }
-.myName .swiper-button-next svg path,
-.myName .swiper-button-prev svg path {
-  fill: #e3282877;
+.myName .swiper-button-next span,
+.myName .swiper-button-prev span {
+  color: #e3282877;
 }
-.myName .swiper-button-next:hover svg path,
-.myName .swiper-button-prev:hover svg path {
-  fill: #ff0000ff;
+.myName .swiper-button-next:hover span,
+.myName .swiper-button-prev:hover span {
+  color: #ff0000ff;
   transition: all 0.2s ease;
 }
 
