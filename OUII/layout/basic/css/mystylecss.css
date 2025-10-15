@@ -1,0 +1,24 @@
+/* my style */
+
+.ec-base-product .prdList {
+  display: flex;
+  flex-wrap: wrap;
+
+  border: 1px solid #f00;
+  box-sizing: border-box;
+}
+
+.ec-base-product .prdList > li {
+  flex: none;
+}
+
+.ec-base-product .prdList .prdList__item {
+margin: 0 10px;
+}
+
+.ec-base-product .prdList .prdList__item .thumbnail {}
+.ec-base-product .prdList .prdList__item .thumbnail .prdIcon.ec-product-bgLT {
+background-position: 10px 10px;
+}
+
+.ec-base-product .prdList .prdList__item .description {}
