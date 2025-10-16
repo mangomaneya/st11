@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0, user-scalable=yes"
+    />
+
+    <!-- PG크로스브라우징필수내용 -->
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <!-- // PG크로스브라우징필수내용 -->
+
+    <title>prdList_item.html</title>
+    <link rel="stylesheet" href="css/common.css" />
+    <!-- 해당 CSS는 쇼핑몰 전체 페이지에 영향을 줍니다. 삭제와 수정에 주의해주세요. -->
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/ec-base-ui.css" />
+    <link rel="stylesheet" href="css/ec-base-button.css" />
+    <link rel="stylesheet" href="css/ec-base-tab.css" />
+    <link rel="stylesheet" href="css/ec-base-table.css" />
+    <link rel="stylesheet" href="css/ec-base-tooltip.css" />
+    <link rel="stylesheet" href="css/ec-base-help.css" />
+    <link rel="stylesheet" href="css/ec-base-fold.css" />
+    <link rel="stylesheet" href="css/ec-base-box.css" />
+    <link rel="stylesheet" href="css/ec-base-desc.css" />
+    <link rel="stylesheet" href="css/ec-base-product.css" />
+    <link rel="stylesheet" href="css/ec-base-prdInfo.css" />
+    <link rel="stylesheet" href="css/ec-base-paginate.css" />
+
+    <!-- 아래가 원본 -------------------------------------------------------------------- -->
+    <!--@css(/layout/basic/css/common.css)-->
+    <!-- 해당 CSS는 쇼핑몰 전체 페이지에 영향을 줍니다. 삭제와 수정에 주의해주세요. -->
+    <!--@css(/layout/basic/css/layout.css)-->
+    <!--@css(/layout/basic/css/ec-base-ui.css)-->
+    <!--@css(/layout/basic/css/ec-base-button.css)-->
+    <!--@css(/layout/basic/css/ec-base-tab.css)-->
+    <!--@css(/layout/basic/css/ec-base-table.css)-->
+    <!--@css(/layout/basic/css/ec-base-tooltip.css)-->
+    <!--@css(/layout/basic/css/ec-base-help.css)-->
+    <!--@css(/layout/basic/css/ec-base-fold.css)-->
+    <!--@css(/layout/basic/css/ec-base-box.css)-->
+    <!--@css(/layout/basic/css/ec-base-desc.css)-->
+    <!--@css(/layout/basic/css/ec-base-product.css)-->
+    <!--@css(/layout/basic/css/ec-base-prdInfo.css)-->
+    <!--@css(/layout/basic/css/ec-base-paginate.css)-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Noto+Sans+KR:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- theme03 -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- theme03 -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&family=Red+Hat+Display:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- theme04 -->
+
+    <!--@css(/layout/basic/css/swiper.min.css)-->
+    <!--@js(/layout/basic/js/swiper-bundle.min.js)-->
+    <!--@js(/js/module/product/sale_price.js)-->
+
+    <!--@js(/layout/basic/js/basic.js)-->
+    <!--@js(/layout/basic/js/layout.js)-->
+    <!--@js(/js/common.js)-->
+    <!--ez-favicon[-->
+    <!--ez-favicon]-->
+    <!--@js(/ez/init.js)-->
+  </head>
+  <body class="theme01" data-ez-theme="theme01">
+    <!-- <div id="skipNavigation">
+      <p><a href="#category">전체상품목록 바로가기</a></p>
+      <p><a href="#contents">본문 바로가기</a></p>
+    </div> -->
+    <div id="wrap">
+      <!--@import(/layout/basic/header.html)-->
+      <!--@import(/layout/basic/sidebar.html)-->
+      <div id="container">
+        <div id="contents">
+          <!-- 메인 콘첸츠 영역 -->
+          <section class="section">
+            <div data-ez-holder="product_listmain">
+              <div
+                class="xans-element- xans-product xans-product-listmain-1 xans-product-listmain xans-product-1 ec-base-product"
+              >
+                <!--
+						$count = 100
+						$basket_result = /product/add_basket.html
+						$basket_option = /product/basket_option.html
+						$moreview = yes
+						$cache = yes
+					-->
+                <ul class="prdList grid4 card-border-no-margin" data-ez-role="layout ez-discount-tag">
+                  <!--
+※ 상품진열 공통소스
+-->
+                  <li id="anchorBoxId_27" class="xans-record-">
+                    <div class="prdList__item">
+                      <div class="thumbnail">
+                        <a
+                          href="/product/상품등록-연습/27/category/1/display/2/?icid=MAIN.product_listmain_1"
+                          ><img
+                            src="//ecimg.cafe24img.com/pg2183b13021209028/kirishop/web/product/medium/20250901/7da6062e76a732796e5898c505b04591.jpg"
+                            id="eListPrdImage27_2"
+                            alt="상품등록 연습"
+                            loading="lazy"
+                          /><span
+                            class="xans-element- xans-product xans-product-imagestyle-1 xans-product-imagestyle xans-product-1 xans-record-"
+                            ><span
+                              class="prdIcon ec-product-bgLT"
+                              style="
+                                background-image: url('//img.echosting.cafe24.com/skin/admin_ko_KR/product/ico_thumb_own1.png');
+                              "
+                            ></span>
+                          </span>
+                          <span
+                            class="xans-element- xans-product xans-product-imagestyle-1 xans-product-imagestyle xans-product-1 xans-record-"
+                            ><span
+                              class="prdIcon ec-product-bgRT"
+                              style="
+                                background-image: url('//img.echosting.cafe24.com/skin/admin_ko_KR/product/ico_thumb_plan3.png');
+                              "
+                            ></span>
+                          </span>
+                        </a>
+                        <div class="likeButton likePrd likePrd_27">
+                          <button type="button">
+                            <img
+                              src="//img.echosting.cafe24.com/skin/admin_ko_KR/product/ico_likeit.png"
+                              class="likePrdIcon"
+                              product_no="27"
+                              category_no="1"
+                              icon_status="off"
+                              alt="좋아요 등록 전"
+                            />
+                            <strong
+                              ><span class="likePrdCount likePrdCount_27"
+                                >0</span
+                              ></strong
+                            >
+                          </button>
+                        </div>
+                        <div class="badge"><span></span></div>
+                        <div class="icon__box">
+                          <span class="wish on"
+                            ><img
+                              src="images/thumbs-up.png"
+                              class="icon_img ec-product-listwishicon"
+                              alt="관심상품 등록 후"
+                              productno="27"
+                              categoryno="1"
+                              icon_status="on"
+                              login_status="T"
+                              individual-set="F"
+                            />WISH</span
+                          >
+                          <span class="cart"
+                            ><img
+                              src="//img.echosting.cafe24.com/design/skin/admin/ko_KR/btn_list_cart.gif"
+                              onclick="category_add_basket('27','1', '2', 'A0000', false, '1', 'P00000BB', 'A', 'F', '0');"
+                              alt="장바구니 담기"
+                              class="ec-admin-icon cart"
+                            />ADD</span
+                          >
+                          <span class="option" 
+                          
+                            >OPTION</span
+                          >
+                        </div>
+                        <div class="sale_box">10%</div>
+                      </div>
+                      <div
+                        class="description"
+                        ec-data-custom="50000"
+                        ec-data-price="45000"
+                      >
+                        <div class="name">
+                          <a
+                            href="/product/상품등록-연습/27/category/1/display/2/?icid=MAIN.product_listmain_1"
+                            class=""
+                            ><span class="title displaynone"
+                              ><span
+                                class=""
+                                style="font-size: 13px; color: #000000"
+                                >상품명</span
+                              >
+                              :</span
+                            >
+                            <span
+                              class=""
+                              style="font-size: 13px; color: #000000"
+                              >상품등록 연습</span
+                            ></a
+                          >
+                        </div>
+                        <p class="ec-base-help txtWarn txt11 displaynone">
+                          단독구매상품
+                        </p>
+                        <ul
+                          class="xans-element- xans-product xans-product-listitem-1 xans-product-listitem xans-product-1 spec"
+                        >
+                          <li class="xans-record-">
+                            <strong class="title displaynone"
+                              ><span
+                                class=""
+                                style="font-size: 12px; color: #333333"
+                                >상품요약정보</span
+                              >
+                              :</strong
+                            >
+                            <span
+                              class=""
+                              style="font-size: 12px; color: #333333"
+                              >상품 요약설명 위치확인을 위해서
+                              입력했습니다.</span
+                            >
+                          </li>
+                          <li class="xans-record-">
+                            <strong class="title displaynone"
+                              ><span
+                                class=""
+                                style="font-size: 12px; color: #aaaaaa"
+                                >소비자가</span
+                              >
+                              :</strong
+                            >
+                            <span
+                              class=""
+                              style="
+                                font-size: 12px;
+                                color: #aaaaaa;
+                                text-decoration: line-through;
+                              "
+                              >50,000원</span
+                            >
+                          </li>
+                          <li class="xans-record-">
+                            <strong class="title displaynone"
+                              ><span
+                                class=""
+                                style="
+                                  font-size: 13px;
+                                  color: #000000;
+                                  font-weight: bold;
+                                "
+                                >판매가</span
+                              >
+                              :</strong
+                            >
+                            <span
+                              class=""
+                              style="
+                                font-size: 13px;
+                                color: #000000;
+                                font-weight: bold;
+                              "
+                              >45,000원</span
+                            ><span id="span_product_tax_type_text" style="">
+                            </span>
+                          </li>
+                          <li class="xans-record-">
+                            <strong class="title displaynone"
+                              ><span
+                                class=""
+                                style="font-size: 12px; color: #333333"
+                                >상품간략설명</span
+                              >
+                              :</strong
+                            >
+                            <span
+                              class=""
+                              style="font-size: 12px; color: #333333"
+                              >상품 간략설명 위치 확인을 위해, 어디에
+                              나올까용~</span
+                            >
+                          </li>
+                        </ul>
+                        <div class="icon"></div>
+                      </div>
+                    </div>
+                  </li>
+                  <li id="anchorBoxId_17" class="xans-record-">
+                    <div class="prdList__item">
+                      <div class="thumbnail">
+                        <a
+                          href="/product/dcpmob-g119-골드-스마트폰/17/category/1/display/2/?icid=MAIN.product_listmain_1"
+                          ><img
+                            src="//ecimg.cafe24img.com/pg2183b13021209028/kirishop/web/product/medium/20250828/8d46e630df5a77b9169b1285cfdec126.jpg"
+                            id="eListPrdImage17_2"
+                            alt="DCPMOB-G119 골드 스마트폰"
+                            loading="lazy"
+                        /></a>
+                        <div class="likeButton likePrd likePrd_17 selected">
+                          <button type="button">
+                            <img
+                              src="//img.echosting.cafe24.com/skin/admin_ko_KR/product/ico_likeit_on.png"
+                              class="likePrdIcon"
+                              product_no="17"
+                              category_no="1"
+                              icon_status="on"
+                              alt="좋아요 등록 후"
+                            />
+                            <strong
+                              ><span class="likePrdCount likePrdCount_17"
+                                >1</span
+                              ></strong
+                            >
+                          </button>
+                        </div>
+                        <div class="badge"><span></span></div>
+                        <div class="icon__box">
+                          <span class="wish on"
+                            ><img
+                              src="//img.echosting.cafe24.com/design/skin/admin/ko_KR/btn_wish_after.png"
+                              class="icon_img ec-product-listwishicon"
+                              alt="관심상품 등록 후"
+                              productno="17"
+                              categoryno="1"
+                              icon_status="on"
+                              login_status="T"
+                              individual-set="F"
+                            />WISH</span
+                          >
+                          <span class="cart"
+                            ><img
+                              src="//img.echosting.cafe24.com/design/skin/admin/ko_KR/btn_list_cart.gif"
+                              onclick="category_add_basket('17','1', '2', 'A0000', false, '1', 'P000000R', 'A', 'F', '0');"
+                              alt="장바구니 담기"
+                              class="ec-admin-icon cart"
+                            />ADD</span
+                          >
+                          <span class="option" style="display: none"
+                            >OPTION</span
+                          >
+                        </div>
+                      </div>
+                      <div
+                        class="description"
+                        ec-data-custom=""
+                        ec-data-price="1300000"
+                      >
+                        <div class="name">
+                          <a
+                            href="/product/dcpmob-g119-골드-스마트폰/17/category/1/display/2/?icid=MAIN.product_listmain_1"
+                            class=""
+                            ><span class="title displaynone"
+                              ><span
+                                class=""
+                                style="font-size: 13px; color: #000000"
+                                >상품명</span
+                              >
+                              :</span
+                            >
+                            <span
+                              class=""
+                              style="font-size: 13px; color: #000000"
+                              >DCPMOB-G119 골드 스마트폰</span
+                            ></a
+                          >
+                        </div>
+                        <p class="ec-base-help txtWarn txt11 displaynone">
+                          단독구매상품
+                        </p>
+                        <ul
+                          class="xans-element- xans-product xans-product-listitem-1 xans-product-listitem xans-product-1 spec"
+                        >
+                          <li class="xans-record-">
+                            <strong class="title displaynone"
+                              ><span
+                                class=""
+                                style="
+                                  font-size: 13px;
+                                  color: #000000;
+                                  font-weight: bold;
+                                "
+                                >판매가</span
+                              >
+                              :</strong
+                            >
+                            <span
+                              class=""
+                              style="
+                                font-size: 13px;
+                                color: #000000;
+                                font-weight: bold;
+                              "
+                              >1,300,000원</span
+                            ><span id="span_product_tax_type_text" style="">
+                            </span>
+                          </li>
+                          <li class="xans-record-">
+                            <strong class="title displaynone"
+                              ><span
+                                class=""
+                                style="font-size: 12px; color: #333333"
+                                >상품간략설명</span
+                              >
+                              :</strong
+                            >
+                            <span
+                              class=""
+                              style="font-size: 12px; color: #333333"
+                              >Sample Product Generated by AI</span
+                            >
+                          </li>
+                        </ul>
+                        <div class="icon"></div>
+                      </div>
+                    </div>
+                  </li>
+                  <li id="anchorBoxId_16" class="xans-record-">
+                    <div class="prdList__item">
+                      <div class="thumbnail">
+                        <a
+                          href="/product/dcptch-a91-블랙-스퀘어-스마트워치/16/category/1/display/2/?icid=MAIN.product_listmain_1"
+                          ><img
+                            src="//ecimg.cafe24img.com/pg2183b13021209028/kirishop/web/product/medium/20250828/86579715dca2535d9b66ea4527cbbf72.jpg"
+                            id="eListPrdImage16_2"
+                            alt="DCPTCH-A91 블랙 스퀘어 스마트워치"
+                            loading="lazy"
+                        /></a>
+                        <div class="likeButton likePrd likePrd_16">
+                          <button type="button">
+                            <img
+                              src="//img.echosting.cafe24.com/skin/admin_ko_KR/product/ico_likeit.png"
+                              class="likePrdIcon"
+                              product_no="16"
+                              category_no="1"
+                              icon_status="off"
+                              alt="좋아요 등록 전"
+                            />
+                            <strong
+                              ><span class="likePrdCount likePrdCount_16"
+                                >0</span
+                              ></strong
+                            >
+                          </button>
+                        </div>
+                        <div class="badge"><span></span></div>
+                        <div class="icon__box">
+                          <span class="wish on"
+                            ><img
+                              src="//img.echosting.cafe24.com/design/skin/admin/ko_KR/btn_wish_after.png"
+                              class="icon_img ec-product-listwishicon"
+                              alt="관심상품 등록 후"
+                              productno="16"
+                              categoryno="1"
+                              icon_status="on"
+                              login_status="T"
+                              individual-set="F"
+                            />WISH</span
+                          >
+                          <span class="cart"
+                            ><img
+                              src="//img.echosting.cafe24.com/design/skin/admin/ko_KR/btn_list_cart.gif"
+                              onclick="category_add_basket('16','1', '2', 'A0000', false, '1', 'P000000Q', 'A', 'F', '0');"
+                              alt="장바구니 담기"
+                              class="ec-admin-icon cart"
+                            />ADD</span
+                          >
+                          <span class="option" style="display: none"
+                            >OPTION</span
+                          >
+                        </div>
+                      </div>
+                      <div
+                        class="description"
+                        ec-data-custom=""
+                        ec-data-price="150000"
+                      >
+                        <div class="name">
+                          <a
+                            href="/product/dcptch-a91-블랙-스퀘어-스마트워치/16/category/1/display/2/?icid=MAIN.product_listmain_1"
+                            class=""
+                            ><span class="title displaynone"
+                              ><span
+                                class=""
+                                style="font-size: 13px; color: #000000"
+                                >상품명</span
+                              >
+                              :</span
+                            >
+                            <span
+                              class=""
+                              style="font-size: 13px; color: #000000"
+                              >DCPTCH-A91 블랙 스퀘어 스마트워치</span
+                            ></a
+                          >
+                        </div>
+                        <p class="ec-base-help txtWarn txt11 displaynone">
+                          단독구매상품
+                        </p>
+                        <ul
+                          class="xans-element- xans-product xans-product-listitem-1 xans-product-listitem xans-product-1 spec"
+                        >
+                          <li class="xans-record-">
+                            <strong class="title displaynone"
+                              ><span
+                                class=""
+                                style="
+                                  font-size: 13px;
+                                  color: #000000;
+                                  font-weight: bold;
+                                "
+                                >판매가</span
+                              >
+                              :</strong
+                            >
+                            <span
+                              class=""
+                              style="
+                                font-size: 13px;
+                                color: #000000;
+                                font-weight: bold;
+                              "
+                              >150,000원</span
+                            ><span id="span_product_tax_type_text" style="">
+                            </span>
+                          </li>
+                          <li class="xans-record-">
+                            <strong class="title displaynone"
+                              ><span
+                                class=""
+                                style="font-size: 12px; color: #333333"
+                                >상품간략설명</span
+                              >
+                              :</strong
+                            >
+                            <span
+                              class=""
+                              style="font-size: 12px; color: #333333"
+                              >Sample Product Generated by AI</span
+                            >
+                          </li>
+                        </ul>
+                        <div class="icon"></div>
+                      </div>
+                    </div>
+                  </li>
+                  <li id="anchorBoxId_11" class="xans-record-">
+                    <div class="prdList__item">
+                      <div class="thumbnail">
+                        <a
+                          href="/product/dcptwo-n20m-블랙-dslr-카메라/11/category/1/display/2/?icid=MAIN.product_listmain_1"
+                          ><img
+                            src="//ecimg.cafe24img.com/pg2183b13021209028/kirishop/web/product/medium/20250828/aacb816d0e53b85ccc3eca2a171c6843.jpg"
+                            id="eListPrdImage11_2"
+                            alt="DCPTWO-N20M 블랙 DSLR 카메라"
+                            loading="lazy"
+                        /></a>
+                        <div class="likeButton likePrd likePrd_11">
+                          <button type="button">
+                            <img
+                              src="//img.echosting.cafe24.com/skin/admin_ko_KR/product/ico_likeit.png"
+                              class="likePrdIcon"
+                              product_no="11"
+                              category_no="1"
+                              icon_status="off"
+                              alt="좋아요 등록 전"
+                            />
+                            <strong
+                              ><span class="likePrdCount likePrdCount_11"
+                                >0</span
+                              ></strong
+                            >
+                          </button>
+                        </div>
+                        <div class="badge"><span></span></div>
+                        <div class="icon__box">
+                          <span class="wish on"
+                            ><img
+                              src="//img.echosting.cafe24.com/design/skin/admin/ko_KR/btn_wish_after.png"
+                              class="icon_img ec-product-listwishicon"
+                              alt="관심상품 등록 후"
+                              productno="11"
+                              categoryno="1"
+                              icon_status="on"
+                              login_status="T"
+                              individual-set="F"
+                            />WISH</span
+                          >
+                          <span class="cart"
+                            ><img
+                              src="//img.echosting.cafe24.com/design/skin/admin/ko_KR/btn_list_cart.gif"
+                              onclick="category_add_basket('11','1', '2', 'A0000', false, '1', 'P000000L', 'A', 'F', '0');"
+                              alt="장바구니 담기"
+                              class="ec-admin-icon cart"
+                            />ADD</span
+                          >
+                          <span class="option" style="display: none"
+                            >OPTION</span
+                          >
+                        </div>
+                      </div>
+                      <div
+                        class="description"
+                        ec-data-custom=""
+                        ec-data-price="1200000"
+                      >
+                        <div class="name">
+                          <a
+                            href="/product/dcptwo-n20m-블랙-dslr-카메라/11/category/1/display/2/?icid=MAIN.product_listmain_1"
+                            class=""
+                            ><span class="title displaynone"
+                              ><span
+                                class=""
+                                style="font-size: 13px; color: #000000"
+                                >상품명</span
+                              >
+                              :</span
+                            >
+                            <span
+                              class=""
+                              style="font-size: 13px; color: #000000"
+                              >DCPTWO-N20M 블랙 DSLR 카메라</span
+                            ></a
+                          >
+                        </div>
+                        <p class="ec-base-help txtWarn txt11 displaynone">
+                          단독구매상품
+                        </p>
+                        <ul
+                          class="xans-element- xans-product xans-product-listitem-1 xans-product-listitem xans-product-1 spec"
+                        >
+                          <li class="xans-record-">
+                            <strong class="title displaynone"
+                              ><span
+                                class=""
+                                style="
+                                  font-size: 13px;
+                                  color: #000000;
+                                  font-weight: bold;
+                                "
+                                >판매가</span
+                              >
+                              :</strong
+                            >
+                            <span
+                              class=""
+                              style="
+                                font-size: 13px;
+                                color: #000000;
+                                font-weight: bold;
+                              "
+                              >1,200,000원</span
+                            ><span id="span_product_tax_type_text" style="">
+                            </span>
+                          </li>
+                          <li class="xans-record-">
+                            <strong class="title displaynone"
+                              ><span
+                                class=""
+                                style="font-size: 12px; color: #333333"
+                                >상품간략설명</span
+                              >
+                              :</strong
+                            >
+                            <span
+                              class=""
+                              style="font-size: 12px; color: #333333"
+                              >Sample Product Generated by AI</span
+                            >
+                          </li>
+                        </ul>
+                        <div class="icon"></div>
+                      </div>
+                    </div>
+                  </li>
+                  <li id="anchorBoxId_13" class="xans-record-">
+                    <div class="prdList__item">
+                      <div class="thumbnail">
+                        <a
+                          href="/product/dcpro-a79-블랙-dslr-카메라/13/category/1/display/2/?icid=MAIN.product_listmain_1"
+                          ><img
+                            src="//ecimg.cafe24img.com/pg2183b13021209028/kirishop/web/product/medium/20250828/f6ea617e044d9dd7a3556aaaea03589f.jpg"
+                            id="eListPrdImage13_2"
+                            alt="DCPRO-A79 블랙 DSLR 카메라"
+                            loading="lazy"
+                        /></a>
+                        <div class="likeButton likePrd likePrd_13">
+                          <button type="button">
+                            <img
+                              src="//img.echosting.cafe24.com/skin/admin_ko_KR/product/ico_likeit.png"
+                              class="likePrdIcon"
+                              product_no="13"
+                              category_no="1"
+                              icon_status="off"
+                              alt="좋아요 등록 전"
+                            />
+                            <strong
+                              ><span class="likePrdCount likePrdCount_13"
+                                >0</span
+                              ></strong
+                            >
+                          </button>
+                        </div>
+                        <div class="badge"><span></span></div>
+                        <div class="icon__box">
+                          <span class="wish"
+                            ><img
+                              src="//img.echosting.cafe24.com/design/skin/admin/ko_KR/btn_wish_before.png"
+                              class="icon_img ec-product-listwishicon"
+                              alt="관심상품 등록 전"
+                              productno="13"
+                              categoryno="1"
+                              icon_status="off"
+                              login_status="T"
+                              individual-set="F"
+                            />WISH</span
+                          >
+                          <span class="cart"
+                            ><img
+                              src="//img.echosting.cafe24.com/design/skin/admin/ko_KR/btn_list_cart.gif"
+                              onclick="category_add_basket('13','1', '2', 'A0000', false, '1', 'P000000N', 'A', 'F', '0');"
+                              alt="장바구니 담기"
+                              class="ec-admin-icon cart"
+                            />ADD</span
+                          >
+                          <span class="option" style="display: none"
+                            >OPTION</span
+                          >
+                        </div>
+                      </div>
+                      <div
+                        class="description"
+                        ec-data-custom=""
+                        ec-data-price="790000"
+                      >
+                        <div class="name">
+                          <a
+                            href="/product/dcpro-a79-블랙-dslr-카메라/13/category/1/display/2/?icid=MAIN.product_listmain_1"
+                            class=""
+                            ><span class="title displaynone"
+                              ><span
+                                class=""
+                                style="font-size: 13px; color: #000000"
+                                >상품명</span
+                              >
+                              :</span
+                            >
+                            <span
+                              class=""
+                              style="font-size: 13px; color: #000000"
+                              >DCPRO-A79 블랙 DSLR 카메라</span
+                            ></a
+                          >
+                        </div>
+                        <p class="ec-base-help txtWarn txt11 displaynone">
+                          단독구매상품
+                        </p>
+                        <ul
+                          class="xans-element- xans-product xans-product-listitem-1 xans-product-listitem xans-product-1 spec"
+                        >
+                          <li class="xans-record-">
+                            <strong class="title displaynone"
+                              ><span
+                                class=""
+                                style="
+                                  font-size: 13px;
+                                  color: #000000;
+                                  font-weight: bold;
+                                "
+                                >판매가</span
+                              >
+                              :</strong
+                            >
+                            <span
+                              class=""
+                              style="
+                                font-size: 13px;
+                                color: #000000;
+                                font-weight: bold;
+                              "
+                              >790,000원</span
+                            ><span id="span_product_tax_type_text" style="">
+                            </span>
+                          </li>
+                          <li class="xans-record-">
+                            <strong class="title displaynone"
+                              ><span
+                                class=""
+                                style="font-size: 12px; color: #333333"
+                                >상품간략설명</span
+                              >
+                              :</strong
+                            >
+                            <span
+                              class=""
+                              style="font-size: 12px; color: #333333"
+                              >Sample Product Generated by AI</span
+                            >
+                          </li>
+                        </ul>
+                        <div class="icon"></div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- //[data-ez-holder] -->
+          </section>
+
+          <!--@contents-->
+        </div>
+      </div>
+      <!--@import(/layout/basic/footer.html)-->
+    </div>
+    <!-- //wrap -->
+
+    <div id="progressPaybar" style="display: none">
+      <div id="progressPaybarBackground" class="layerProgress"></div>
+      <div id="progressPaybarView">
+        <div class="box">
+          <h3>현재 결제가 진행중입니다.</h3>
+          <p class="txt">
+            본 결제 창은 결제완료 후 자동으로 닫히며,결제 진행 중에 본 결제 창을
+            닫으시면<br />
+            주문이 되지 않으니 결제 완료 될 때 까지 닫지 마시기 바랍니다.
+          </p>
+          <div class="progressbar">
+            <img
+              src="//img.echosting.cafe24.com/skin/skin/common/img_loading.gif"
+              alt="loading"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div module="Layout_multishopShipping">
+      <!--@css(/layout/basic/css/ec-base-layer.css)-->
+      <!--@css(/css/module/layout/multishopShipping.css)-->
+      <!--@js(/js/module/layout/multishopShipping.js)-->
+      <!-- <div class="worldshipLayer ec-base-layer typeModal">
+        <div class="header">
+          <h3>WORLD SHIPPING</h3>
+        </div>
+        <div class="content">
+          <p class="desc">
+            PLEASE SELECT THE DESTINATION COUNTRY AND LANGUAGE :
+          </p>
+          <select module="Layout_multishopShippingCountrylist">
+            <option value="{$country_code}" {$country_default_selected}>
+              SHIPPING TO : {$country_name}
+            </option>
+            <option value="{$country_code}" {$country_default_selected}>
+              SHIPPING TO : {$country_name}
+            </option>
+          </select>
+          <select module="Layout_multishopShippingLanguagelist">
+            <option value="{$shop_domain}" {$shop_default_selected}>
+              LANGUAGE : {$shop_language_name}
+            </option>
+            <option value="{$shop_domain}" {$shop_default_selected}>
+              LANGUAGE : {$shop_language_name}
+            </option>
+          </select>
+        </div>
+        <div class="ec-base-button">
+          <a href="#none" class="btnSubmitFix sizeM">GO</a>
+        </div>
+        <a href="#none" class="btnClose">닫기</a>
+      </div> -->
+    </div>
+
+    <div class="layer_shadow" id="layer_shadow"></div>
+    <div id="layoutDimmed" class="dimmed"></div>
+
+    <link rel="stylesheet" href="css/sub_style.css" />
+    <link rel="stylesheet" href="css/sub_theme.css" />
+    <link rel="stylesheet" href="css/add_theme01.css" />
+    <link rel="stylesheet" href="css/add_theme02.css" />
+    <link rel="stylesheet" href="css/add_theme03.css" />
+    <link rel="stylesheet" href="css/add_layout.css" />
+
+    <link rel="stylesheet" href="css/mystylecss.css"><!-- -->
+
+    <!-- 아래가 원본 -------------------------------------------------------- -->
+    <!--@css(/layout/basic/css/sub_style.css)-->
+    <!--@css(/layout/basic/css/sub_theme.css)-->
+    <!--@css(/layout/basic/css/add_theme01.css)-->
+    <!--@css(/layout/basic/css/add_theme02.css)-->
+    <!--@css(/layout/basic/css/add_theme03.css)-->
+    <!--@css(/layout/basic/css/add_layout.css)-->
+  </body>
+</html>
