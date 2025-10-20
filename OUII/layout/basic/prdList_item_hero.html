@@ -95,12 +95,12 @@
       <!--@import(/layout/basic/header.html)-->
       <!--@import(/layout/basic/sidebar.html)-->
       <div id="container">
-        <div id="contents">
+        <div id="contents" class="ub-style">
           <!-- 메인 콘첸츠 영역 -->
 
-          <section class="section visual_section">
+          <section class="section visual_section sectcion_full">
             <!-- Slider main container -->
-            <div class="swiper visual_swiper">
+            <div class="swiper visual_swiper ub-swiper ub-swiper-controls-bottom">
               <!-- Additional required wrapper -->
               <div class="swiper-wrapper">
                 <!-- Slides -->
@@ -109,7 +109,7 @@
                     <picture>
                       <source
                         srcset="/OUII/layout/basic/images/imgi_1_m.png"
-                        media="(max-width:720px)"
+                        media="(max-width:768px)"
                       />
                       <img src="/OUII/layout/basic/images/imgi_1_pc.png" alt="">
                     </picture>
@@ -120,7 +120,7 @@
                     <picture>
                       <source
                         srcset="/OUII/layout/basic/images/imgi_2_m.png"
-                        media="(max-width:720px)"
+                        media="(max-width:768px)"
                       />
                       <img src="/OUII/layout/basic/images/imgi_2_pc.png" alt="">
                     </picture>
@@ -131,22 +131,24 @@
                     <picture>
                       <source
                         srcset="/OUII/layout/basic/images/imgi_3_m.png"
-                        media="(max-width:720px)"
+                        media="(max-width:768px)"
                       />
                       <img src="/OUII/layout/basic/images/imgi_3_pc.png" alt="">
                     </picture>
                   </a>
                 </div>
               </div>
-              <!-- If we need pagination -->
-              <div class="swiper-pagination"></div>
-
-              <!-- If we need navigation buttons -->
-              <div class="swiper-button-prev"></div>
-              <div class="swiper-button-next"></div>
-
-              <!-- If we need scrollbar -->
-              <div class="swiper-scrollbar"></div>
+              <div class="ub-swiper-controls">
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+  
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+  
+                <!-- If we need scrollbar -->
+                <div class="swiper-scrollbar"></div>
+              </div>
             </div>
           </section>
           <!--@contents-->
@@ -238,6 +240,9 @@
         // Optional parameters
         direction: "horizontal",
         loop: true,
+        slidesPerView:"auto",
+        centeredSlides: true,
+        // spaceBetween:30,
         // autoplay: {
         //   delay: 2500,
         //   disableOnInteraction: false,
@@ -246,7 +251,7 @@
         // If we need pagination
         pagination: {
           el: ".swiper-pagination",
-          type: "progressbar",
+          type: "fraction",
         },
 
         // Navigation arrows
