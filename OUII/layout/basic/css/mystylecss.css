@@ -1,5 +1,10 @@
 /* my style */
 
+/* 변수지정 */
+:root {
+  --primary-color: #1f1f1f;
+}
+
 .ec-base-product .prdList {
   display: flex;
   flex-wrap: wrap;
@@ -175,21 +180,61 @@
 }
 
 /* visual_swiper hero */
-@media screen and (min-width: 1024px) {
-  #contents > .visual_section{
+@media screen and (max-width: 1024px) {
+  #container #contents.ub-style {
     max-width: none;
     width: 100%;
   }
 }
-.visual_section{
-  --visual-swiper-width:100%;
 
+@media screen and (max-width: 768px) {
+  #container #contents.ub-style {
+    max-width: none;
+    width: 100%;
+  }
 }
-.visual_section .visual_swiper {width: var(--visual-swiper-width);}
-.visual_section .swiper .swiper-wrapper {}
-.visual_section .swiper .swiper-wrapper .swiper-slide{}
-.visual_section .swiper .swiper-wrapper .swiper-slide picture{
+.visual_section {
+  --visual-swiper-width: 100%;
+}
+.visual_section .visual_swiper {
+  width: var(--visual-swiper-width);
+}
+.visual_section .swiper .swiper-wrapper {
+}
+.visual_section .swiper .swiper-wrapper .swiper-slide {
+}
+.visual_section .swiper .swiper-wrapper .swiper-slide picture {
   display: block;
 }
-.visual_section .swiper .swiper-wrapper .swiper-slide picture source{display: block;}
-.visual_section .swiper .swiper-wrapper .swiper-slide picture img{display: block;width: 100%;height: auto;max-width: none;}
+.visual_section .swiper .swiper-wrapper .swiper-slide picture source {
+  display: block;
+}
+.visual_section .swiper .swiper-wrapper .swiper-slide picture img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: none;
+}
+
+/* ub-swiper */
+
+.ub-swiper .swiper-button-prev,
+.ub-swiper .swiper-container-rtl .swiper-button-next {
+  background-image: url("../images/arrow_back_ios_48.svg");
+  left: 50px;
+  right: auto;
+}
+.ub-swiper .swiper-button-next,
+.ub-swiper .swiper-container-rtl .swiper-button-prev {
+  background-image: url("../images/arrow_forward_ios_48.svg");
+  right: 50px;
+  left: auto;
+}
+.ub-swiper .swiper-pagination-bullet {
+  vertical-align: middle;
+}
+.ub-swiper .swiper-pagination-bullet-active {
+  opacity: 1;
+  background: transparent;
+  border: 4px solid var(--primary-color);
+}
