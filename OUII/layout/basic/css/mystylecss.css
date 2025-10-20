@@ -200,6 +200,7 @@
   width: var(--visual-swiper-width);
 }
 .visual_section .swiper .swiper-wrapper {
+  align-items: center;
 }
 .visual_section .swiper .swiper-wrapper .swiper-slide {
 }
@@ -217,24 +218,74 @@
 }
 
 /* ub-swiper */
-
+.ub-swiper .swiper-button-prev,
+.ub-swiper .swiper-button-next {
+  width: 60px;
+  height: 80px;
+  background-size: contain;
+}
 .ub-swiper .swiper-button-prev,
 .ub-swiper .swiper-container-rtl .swiper-button-next {
   background-image: url("../images/arrow_back_ios_48.svg");
   left: 50px;
   right: auto;
+  background-position: 4px center;
 }
 .ub-swiper .swiper-button-next,
 .ub-swiper .swiper-container-rtl .swiper-button-prev {
   background-image: url("../images/arrow_forward_ios_48.svg");
   right: 50px;
   left: auto;
+  background-position:  center;
 }
 .ub-swiper .swiper-pagination-bullet {
   vertical-align: middle;
+  margin: 4px;
 }
 .ub-swiper .swiper-pagination-bullet-active {
   opacity: 1;
   background: transparent;
   border: 4px solid var(--primary-color);
+}
+
+.ub-swiper-controls .swiper-pagination {
+  position: absolute;
+  bottom: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+/* swiper controls가 슬라이드 아래 표시 */
+
+.ub-swiper.ub-swiper-controls-bottom .swiper-slide{
+  width: 100% !important;
+  transform: scale(0.9);
+  transform-origin: center bottom; /*트랜스폼 객체의 정렬 기준점*/
+}
+.ub-swiper.ub-swiper-controls-bottom .swiper-slide-active{
+  transform: scale(1);
+  transition: all 0.2s ease;
+}
+.ub-swiper.ub-swiper-controls-bottom .ub-swiper-controls {
+  display: flex;justify-content: center; align-items: center; gap: 2rem;
+  box-sizing: border-box; padding: 0.5rem; max-width: 1240px;
+}
+.ub-swiper.ub-swiper-controls-bottom .ub-swiper-controls > div {
+  box-sizing: border-box;
+  position: static;
+}
+.ub-swiper.ub-swiper-controls-bottom .ub-swiper-controls .swiper-scrollbar {
+  order: 1; width: 100%; height: 4px;
+}
+
+.ub-swiper.ub-swiper-controls-bottom .ub-swiper-controls .swiper-button-next,
+.ub-swiper.ub-swiper-controls-bottom .ub-swiper-controls .swiper-button-prev {
+  order: 3; width: 28px; height: 28px; margin-top: 0; border: 1px solid #ccc;
+}
+
+.ub-swiper.ub-swiper-controls-bottom .ub-swiper-controls .swiper-pagination-fraction {
+  order: 2;
+  width: auto; 
+  display: flex; align-items: stretch; gap: 0.5rem; transform: none;
 }
