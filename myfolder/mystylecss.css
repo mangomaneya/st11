@@ -1,9 +1,10 @@
 /* my style */
 
 /* 변수지정 */
-:root {
-  --primary-color: #1f1f1f;
-}
+@import url(/myfolder/css/ub-variables.css);
+
+/* 그리드시스템 */
+@import url(/myfolder/css/ub-grid-system.css);
 
 .ec-base-product .prdList {
   display: flex;
@@ -185,6 +186,7 @@ hero section용
 */
 .visual-section{
   --visual-swiper-width:100%;
+  margin-bottom: 120px;
 }
 /* @media (min-width: 1024px) {
     #contents.ub-style .visual-section  {
@@ -329,7 +331,7 @@ swiper controls가 슬라이드 아래 표시
 .ub-swiper.ub-swiper-controls-bottom .swiper-pagination-progressbar {
   width: 100%;
   max-width: 85%;
-  height: 4px;
+  height: 2px;
   background: rgba(0,0,0,0.1);
 }
 
