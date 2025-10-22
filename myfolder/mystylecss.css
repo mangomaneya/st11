@@ -311,6 +311,12 @@ ub-swiper
   width: 60px;
   height: 60px;
   background-size: contain;
+ }
+.ub-swiper .swiper-button-prev{
+    background-image: url(/myfolder/images/arrow_back.svg);
+   background-position: center;
+    left: 20px;
+    right: auto;
 }
 .ub-swiper .swiper-button-prev {
   background-image: url(/myfolder/images/arrow_back.svg);
@@ -329,14 +335,14 @@ ub-swiper
   bottom: 1rem;
   width: 100%;
 }
-.ub-swiper .swiper-pagination-bullet {
+.ub-swiper .swiper-pagination-bullet{
   vertical-align: middle;
   margin-right: 10px;
 }
 .ub-swiper .swiper-pagination-bullet-active {
-  opacity: 1;
-  background: transparent;
-  border: 4px solid var(--primary-color);
+    opacity: 1;
+    background: transparent;
+    border:4px solid var(--primary-color);
 }
 
 /*******
