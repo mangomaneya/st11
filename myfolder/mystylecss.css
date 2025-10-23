@@ -146,10 +146,7 @@
 }
 
 /*  */
-.section {
-  /* 변수선언부분 */
-  --section-bg: beige;
-}
+
 #contents > .section_full_content_center {
   background-color: var(--section-bg);
   width: 100%;
@@ -172,6 +169,7 @@
   max-width: none;
   /* padding: 0 calc((100% - 1200px) / 2); */
 }
+
 @media screen and (min-width: 1024px) {
   #contents > .section_full_only_content > .main_title {
     max-width: 1230px;
@@ -373,4 +371,39 @@ swiper controls가 슬라이드 아래 표시
 .ub-swiper.ub-swiper-controls-bottom #btn-autoplay-toggle .icon-play.hidden,
 .ub-swiper.ub-swiper-controls-bottom #btn-autoplay-toggle .icon-pause.hidden{
   display: none;
+}
+
+
+/* 단처리 ub-dan*/
+
+.ub-dan{margin-top: var(--space-md);}
+.ub-dan-row{}
+.ub-dan-item{
+  border: 1px solid #f00;
+}
+
+@media screen and (max-width:1024px) {
+  .ub-dan-row.md-scroll{
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    overflow-x: auto;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100% !important;
+    justify-content: start;
+  }
+  .ub-dan-row.md-scroll .ub-dan-item {
+    scroll-snap-align: center;
+    width: 80%;
+    max-width: 50vw;
+
+    /* 요소 크기가 줄지 말고 지정된 width값을 따라라 */
+    flex: none;
+  }
+}
+
+@media screen and (max-width:480px){
+.ub-dan-row.md-scroll .ub-dan-item{
+  max-width: 100%;
+}
 }
