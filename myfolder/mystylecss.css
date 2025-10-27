@@ -32,7 +32,7 @@ mystyle
   margin: 0 0 70px 0;
 }
 
-.ec-base-product .prdList .prdList__item {
+.ec-base-product .prdList .prdList__item{
   margin: 0 10px;
 }
 
@@ -219,7 +219,7 @@ main_title이 content 너비 범위에서 left/center/right 정렬
 /*         max-width: 1230px; */
 #contents > .section_full_content_center {
   background-color: var(--section-bg);
-  width: 100%;
+  width:100%;
   max-width: none;
   padding-top: var(--section-padding-top-bottom);
   padding-bottom: var(--section-padding-top-bottom);
@@ -249,7 +249,7 @@ main_title이 content 너비 범위에서 left/center/right 정렬
 
 #contents > .section_full_only_content {
   background-color: var(--section-bg);
-  width: 100%;
+  width:100%;
   max-width: none;
   padding-top: var(--section-padding-top-bottom);
   padding-bottom: var(--section-padding-top-bottom);
@@ -263,6 +263,7 @@ main_title이 content 너비 범위에서 left/center/right 정렬
     margin-right: auto;
   }
 }
+
 
 /*********
 visual-swiper
