@@ -1,0 +1,10 @@
+#footer {   margin-top: 100px; }/* 삭제 */
+/* 푸터 css 연습 */
+#footer {
+  width: 100%; border-top: 1px solid #000;background-color: #ccc;
+}
+#footer .inner{width: var(--section-width, 92%); margin: 0 auto; padding: 80px 0 88px;
+  display: flex; flex-direction: row; flex-wrap: wrap;justify-content: start;align-items: start;}
+.bt_top{width: 100%;}
+.bt_middle{width: 100%;}
+.bt_bottom{width: 100%;}
