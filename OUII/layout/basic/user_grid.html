@@ -15,7 +15,7 @@
     <meta http-equiv="Pragma" content="no-cache" />
     <!-- // PG크로스브라우징필수내용 -->
 
-    <title>hero banner</title>
+    <title>사용자 단처리</title>
     <script
       src="https://code.jquery.com/jquery-3.6.0.min.js"
       integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
@@ -77,9 +77,6 @@
     />
     <!-- theme04 -->
 
-    <link rel="stylesheet" href="css/swiper.min.css" />
-    <script src="js/swiper-bundle.min.js"></script>
-
     <!--@css(/layout/basic/css/swiper.min.css)-->
     <!--@js(/layout/basic/js/swiper-bundle.min.js)-->
     <!--@js(/js/module/product/sale_price.js)-->
@@ -100,97 +97,60 @@
       <!--@import(/layout/basic/header.html)-->
       <!--@import(/layout/basic/sidebar.html)-->
       <div id="container">
-        <div id="contents" class="ub-style">
+        <div id="contents">
           <!-- 메인 콘첸츠 영역 -->
-
-          <section class="section visual_section sectcion_full">
-            <!-- Slider main container -->
-            <div
-              class="swiper visual_swiper ub-swiper ub-swiper-controls-bottom"
-            >
-              <div class="swiper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide">
-                  <picture>
-                    <source
-                      srcset="/myfolder/images/img1-m.png"
-                      media="(max-width:768px)"
-                    />
-                    <img src="/myfolder/images/img1.png" alt="" />
-                  </picture>
+          <!-- 사용자 단처리 -->
+          <section class="section ub-dan section_full_only_content">
+            <!-- 1단처리 -->
+            <div class="ub-dan-wrapper">
+              <div class="ub-dan-row row">
+                <div class="ub-dan-item col-12">
+                  <img src="/myfolder/images/img1.png" alt="" />
                 </div>
-                <div class="swiper-slide">
-                  <picture>
-                    <source
-                      srcset="/myfolder/images/img2-m.png"
-                      media="(max-width:768px)"
-                    />
-                    <img src="/myfolder/images/img2.png" alt="" />
-                  </picture>
-                </div>
-                <div class="swiper-slide">
-                  <picture>
-                    <source
-                      srcset="/myfolder/images/img3-m.png"
-                      media="(max-width:768px)"
-                    />
-                    <img src="/myfolder/images/img3.png" alt="" />
-                  </picture>
-                </div>
-              </div>
-              <div class="ub-swiper-controls">
-                <!-- If we need pagination -->
-                <div class="swiper-pagination"></div>
-
-                <!-- 커스텀 프랙션 요소 -->
-                <div class="custom-fraction">
-                  <span class="current">1</span> / <span class="total">3</span>
-                </div>
-
-                <!-- If we need navigation buttons -->
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-
-                <!-- If we need scrollbar -->
-                <!-- <div class="swiper-scrollbar"></div> -->
-
-                <!-- 일시정지/재생 버튼 -->
-                <button id="btn-autoplay-toggle" class="">
-                  <span id="icon-pause" class="icon-pause">pause</span>
-                  <span id="icon-play" class="icon-play hidden"
-                    >play_arrow</span
-                  >
-                </button>
               </div>
             </div>
           </section>
+
+          <section class="section ub-dan section_full_content_center">
+            <!-- 2단처리 -->
+            <div class="ub-dan-wrapper">
+              <div class="ub-dan-row row">
+                <div class="ub-dan-item col-6 col-md-12">
+                  <img src="/myfolder/images/img1.png" alt="" />
+                </div>
+                <div class="ub-dan-item col-6 col-md-12">
+                  <img src="/myfolder/images/img2.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="section ub-dan">
+            <!-- 3단처리 -->
+            <div class="ub-dan-wrapper">
+              <div class="ub-dan-row row md-scroll flex-nowrap">
+                <div class="ub-dan-item col-4">
+                  아이템1
+                  <img src="/myfolder/images/img_1_m.png" alt="" />
+                </div>
+                <div class="ub-dan-item col-4">
+                  아이템2
+                  <img src="/myfolder/images/img_2_m.png" alt="" />
+                </div>
+                <div class="ub-dan-item col-4">
+                  아이템3
+                  <img src="/myfolder/images/img_3_m.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </section>
+
           <!--@contents-->
         </div>
       </div>
       <!--@import(/layout/basic/footer.html)-->
     </div>
     <!-- //wrap -->
-
-    <div id="progressPaybar" style="display: none">
-      <div id="progressPaybarBackground" class="layerProgress"></div>
-      <div id="progressPaybarView">
-        <div class="box">
-          <h3>현재 결제가 진행중입니다.</h3>
-          <p class="txt">
-            본 결제 창은 결제완료 후 자동으로 닫히며,결제 진행 중에 본 결제 창을
-            닫으시면<br />
-            주문이 되지 않으니 결제 완료 될 때 까지 닫지 마시기 바랍니다.
-          </p>
-          <div class="progressbar">
-            <img
-              src="//img.echosting.cafe24.com/skin/skin/common/img_loading.gif"
-              alt="loading"
-              loading="lazy"
-            />
-          </div>
-        </div>
-      </div>
-    </div>
 
     <div module="Layout_multishopShipping">
       <!--@css(/layout/basic/css/ec-base-layer.css)-->
@@ -248,6 +208,5 @@
     <!--@css(/layout/basic/css/add_theme02.css)-->
     <!--@css(/layout/basic/css/add_theme03.css)-->
     <!--@css(/layout/basic/css/add_layout.css)-->
-
   </body>
 </html>
