@@ -22,7 +22,7 @@
         event.preventDefault(); 
         
         // PC 환경에서는 아코디언 기능 작동을 즉시 차단 (1024px 이상)
-        if ($(window).width() >= BREAKPOINT_WIDTH) {
+        if ($(window).width() > BREAKPOINT_WIDTH) {
             return;
         }
 
@@ -73,7 +73,7 @@
             wrapContents($(this));
         });
 
-        if (window_width < BREAKPOINT_WIDTH) {
+        if (window_width <= BREAKPOINT_WIDTH) {
             // 📱 모바일 환경 (1024px 미만)
             $items.each(function() {
                 const $item = $(this);
